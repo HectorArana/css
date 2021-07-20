@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 	<title>My primera pagina web para Coursera</title>
+
+
+	<!-- Aquí se encuentra la Forma 3. Aquí utilizaré la hoja de css para cambiar el color del fondo y la fuente -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+
+ 	<style type="text/css">
+
+
+/*Aquí se encuentra la Forma 1. Aplicando de forma directa a h1 por esta etiqueta dándole su lugar de margen y el color de letra*/
+
+h1{
+    text-align: left;
+    color: white;
+}
+#naranjita{
+   background-color: orange;
+}
+
+
+
+#navegador ul{
+   list-style-type: none;
+   text-align: center;
+}
+#navegador li{
+   display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+#navegador li a {
+   padding: 2px 7px 2px 7px;
+   color: #666;
+   background-color: #eeeeee;
+   border: 1px solid #ccc;
+   text-decoration: none;
+}
+#navegador li a:hover{
+   background-color: #333333;
+   color: #ffffff;
+}
+   </style>
+ <style type="text/css">#_picTagger{position: absolute; top: 0; left: 0; display: none; cursor:pointer; width:30px;height:30px; background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcNDjsmxh/mUwAABQdJREFUWMOll8tvVVUUxn9r39M3CLZFbE1RHkatiSZGiROjSILREKcOTByYGGY6cSATjRP/Bpw5NNGEgY/ERExIMCho1MSISEBEXoIUWrCl7d3rc7D3eVzgQgv75tx7cvc+e639rW99ax1798sjOIwXZh+2WrY1GAPBwDAMSF9dhvKv3WKJQBIORGk2ur5pR+0I8tPFXNvHimCnrAU4yAwZmCntWxq5zoquue0+L8AFErgYjJHt0XVq3m28WIy+yz0QJVpmBDPMSFe5qQBTV/vJP90EBWXjwh0cEV20XbuK+bZvDSaCl8ZVwW9mSMLMum6czt5lXkrIWHJAUo0EwqWtRds1ZAhzsiEDHO+AVdzeqJ9PB0rGoXJoqHD3fNK83MTIUB+vPTlG25fAslsyNI19xy7x06kZkGdipvkgd9wdJKTkWV/LmFw7xOhQLypjuOxPcqG3CDw2toLRoR4kT3Y923KnkBwI6ZxmjcjC3qOX+PrI1C3P6Tm2BrRCJyPWruzlgxc35FwseZEcwJ1CLiwkJ4QyoTI8ljbsNqKLB0cHeH7T3YwO9nBlIfLjycvsOz5NkZ8rHy9j3zQuOUFylCFB3lh88xFdbHtohJ3P38+q/oJD52eZW3Re3zzGW89MEP36DEmHT3aUQ17kf9OE2TUC0t2T9SMDvPL4Gj764Sx7j16iCIZLfPH7Bd7f9gAvPzrK579daOzXsKPMEs8IlItKEnYVmzxc8NzG1Rw+P8feoxfpaSXxagXj7MwCu3/9ly0b72bRdd1WKlPRHSFCSQxJTbBuCf/Yyl7+nJqlCKFjrgjGuSuL3NXfyoTrUKbkfbm/IAhVaS6j4sHNRjCYvhoZHuzFG0YWo3jpkRFW9LZYjOqUj1JomqSU5/yTlqU1rWAcPDHD5omVTKzuA2By7RBvPD3On1NzbJ8c4fsT0/Rcg06piUJJFYFgWhrrOwTWYGquDcB729azfXKUVf0Fxy7M8eoT92IGH/98nm4Z3Py7WK64bhge4O1nJ+hpGd/+Nc3Ji/O88PAwq/sL5tvOgb8v88kv51iIvqQ9i44YqbvsC1g/3M87W9ZRFsf9x2c4fG6Wr/6Yoq8ILETHgGB28+4Eq7gWoMz/PFkG5wbGd265v1p68OQMh/75D7PE/Oh1P9E8VEVSVcne0T8UKkW4WliXEmXhuG9VHzu3rKu8P/D3DLv2n05yq+6VuEMFMtnMDXlEsjoEUtbsMgSqXXaJpyZWVsXqwInpyrhuwN6qnKWcxqriU6a60lTuTCoploTJ64pViZP47vglNg33c3Rqjk9/OU8rcEPjNcBWF56Motzrfb2W+YSAJ0kqlUpyyH2Cu3N6ep4P9hwnmBEM3JfajAj3svIl4ZF7VROEKFLPp7pKkXQ6ujN5zwBDPYCFZfVEFTZyBntbLLYj7rGS/ARBCnGR4M9H8gDBcTmxHXl4TR+PrOmvUtOW6IboZP5Cu51C4F6X4hz2oixC6bUBLCaWRo+0Y/eOeMloZK64R+QxO+VlMUgkrMnv6c6dAiGrK9dyHalImt9uTDUJq1SXshJmJ0pPzs5c5c3dhxrKeLso1Om30K7hb9osBLPAoOWKKIkYjctzMTdI4U4CUL2UdPZlpdRoNiDtqRGos4HcHYl4B5c3+kBVp268F+wJhLCjgqS8Gosaz97WVRm99pBp7Ai+0D4DjAOfkcJRe3un1pt71KeezbbGve1n/gdwJ/txOdnCrQAAAABJRU5ErkJggg==); background-repeat:no-repeat; background-position: center; background-size: 100%; z-index:10000;}</style></head>
+ <body bgcolor="#00ccee" link="blue" alink="red" vlink="green">
+
+<header align="center">
+  <img src="./My primera pagina web para Coursera_files/dos.jpg" align="right">
+  <h1>EJERCICIOS DEL WEB SITE POLICAR S.A.</h1> 
+  <h2>Nos encargamos de hacer el mejor plastico desde 1969.</h2>
+
+<div id="navegador">
+<ul>
+ <li><a href="https://aceituno.github.io/dos/index.html">Datos Personales dos</a></li>
+ <li><a href="https://aceituno.github.io/dos/listas.html">listas </a></li>
+ <li><a href="https://aceituno.github.io/dos/tablas.html">Tablas</a></li>
+ <li><a href="https://aceituno.github.io/dos/imagen.html">Graficos de dino</a></li>
+</ul>
+</div>
+</header>
+<div id="rojo" style="background-color: gray;">
+  
+<h1> Datos Personales</h1><br>
+
+<div id="azul" style="background-color: blue;">
+  <p> 
+  <u><i></i></u></p><h1><u><i>Hola, este es mi sitio de Coursera</i></u></h1>
+ <b></b><h2><b> Elmer Aceituno7h2&gt;</b>
+ </h2><h6>4to, Perito Contador pandemia</h6>
+ <h3>IPC jornada vespertina</h3>
+ <p></p>
+</div>
+ <hr size="12" width="90%" color="blue">
+
+</div>
+<section>
+  <div id="naranjita">
+  <h1>Artículos relacionados</h1>
+  <article>
+
+
+
+
+<!-- Aquí se encuentra la Forma 2. Con <style> cambié el color del texto de h1 y al párrafo -->
+
+   <h2><a href="https://aceituno.github.io/dos/el-calentamiento-global-en-2030.html" style="color: black ;">El calentamiento global en 2030</a></h2>
+    <p style="color: darkred;">¿Cómo será la vida para los habitantes de la Tierra en 2030? Los efectos de la conducta humana se harán presente en el futuro cercano...</p>
+  </article>
+</div>
+
+
+
+
+  <article>
+    <h2><a href="https://aceituno.github.io/dos/prevenir-el-cambio-climatico.html">La prevención del cambio climático</a></h2>
+    <p>¿Qué puede hacerse desde casa para dejar de contribuir al cambio climático? Aprende algunas técnicas que ayudarán a tu planeta...</p>
+  </article>
+
+</section>
+
+<aside>
+<h4>Epcot Center</h4>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+  
+  <br><br><br><br><br><br>
+  <br>
+  <footer>
+  Todos los derechos reservados Instituto Profesional de Computacion 2021, Sitio Web. Diseñado por: Andrea Agapito. 6to. Contador
+</footer>
+ 
+ 
+
+  <div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div><div id="_picTagger" title="Click to search similar image." style="display: none;"><a href="javascript:void(0);"><div style="width:100%; height:100%;"></div></a></div></body></html>
